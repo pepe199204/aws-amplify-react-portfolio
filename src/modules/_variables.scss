@@ -1,0 +1,29 @@
+// Load Fonts
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif);
+
+$white:       #ffffff;
+$darkblue:    #022933;
+$yellow:      #FFBA00;
+$blue:        #0076A3;
+$green:       #77c38e;
+$darkgreen:   #64975f;
+$orange:      #F39856;
+$red:         #D14348;
+$purple:      #6D73C2;
+$gray:        #3d3d3d;
+$darkgray:    #1e1e1e;
+
+
+$color-main: $darkblue;
+$color-backgrounds: $darkgray;
+$color-headlines: $red;
+
+
+$font-main: Roboto, sans-serif;
+
+//breakpoints
+
+$small:		450px;
+$medium:	760px;
+$large:		1200px;
