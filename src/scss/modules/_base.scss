@@ -1,0 +1,174 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  font-family: $font-main;
+  color: $color-main;
+  background-color: $color-backgrounds;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  height:auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $gray;
+ }
+.section {
+  display:block;
+  color: $white;
+  //border: 1px dotted red;
+  margin: 0 auto;
+  width: 90%;
+  h2{
+    color: $green;
+    font-size: 40px;
+  }
+  h3{
+    color: $green;
+    font-size: 20px;
+  }
+  p {
+    font-size: 20px;
+  }
+ }
+ul {
+   list-style: none;
+   column-count: 3;
+   align-self: auto;
+   align-items: stretch;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+ .flexContainer {
+  display: flex;
+  flex-flow: wrap;
+  align-content:space-around;
+  justify-content:left;
+  padding: 20px;
+  flex-grow: 1;
+  flex-basis: 100%;
+ }
+ .itemFlex {
+   padding: 20px;
+   width: 40%;
+ }
+ .itemFlexWork {
+   width: 33%;
+   text-align: center;
+   &:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
+   
+ }
+ .subItemFlex {
+  padding: 0 15px;
+ }
+ .arrowList {
+   font-size: small;
+   padding-right: 4px;
+   color: $green;
+ }
+ 
+ .arrowListE {
+   font-size: small;
+   padding-right: 4px;
+   color: $green;
+ }
+.ulExperience {
+   list-style: none;
+   column-count: 1;
+   margin: 0;
+ }
+.experienceE {
+  color: $softgray;
+}
+ul li::before {
+  content: "\2022";
+  color: $green;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 20px;
+  padding: 0;
+}
+hr {
+  border: 1px dashed $gray;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px dashed $gray;
+}
+
+.img {
+  width: 70%;
+  border: 3px solid $green;
+}
+$color-headlines: $blue, $purple, $green,
+  $red, $orange, $yellow;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-main;
+}
+
+.btn {
+  display:block;
+  color: $white;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 5px;
+  background-color: inherit;
+  transition: 0.2s;
+  &:hover {
+    // animation: 1s ease-in-out both fade-in;
+    transform: scale(1.1);
+    transition: 0.2s;
+    color: $green;
+    background-color: $darkgray;
+    
+  }
+  //border: 1px dashed $green;
+  
+}
+button:focus {
+  outline:0;
+}
+.socialNetwork {
+  background-color: inherit;
+  width: 30px;
+  height: 30px;
+
+
+}
+footer {
+   color: $white;
+   text-align: center;
+   font-size: large;
+}
+
+.heart{
+  color: $green;
+}
+// @for $item from 1 through length($color-headlines) {
+//   h#{$item} {
+//     color: nth($color-headlines, $item);
+//   }
+// }
