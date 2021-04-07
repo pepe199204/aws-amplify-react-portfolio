@@ -5,7 +5,7 @@ const Footer = () => {
             <br/>
             <br/>
             <br/>
-            <p>Code With <b className='heart'>&#9829;</b> 2021</p>
+            <p className='footerC'>Made with React, Sass and <b className='heart'>&#9829;</b> 2021</p>
         </footer>
     )
 }

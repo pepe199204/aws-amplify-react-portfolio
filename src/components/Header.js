@@ -1,34 +1,18 @@
-import PropTypes from 'prop-types'
 import Button from './Button'
 
-const Header = (props) => {
+const Header = ({onAdd, showText}) => {
 
 
-    const onClick = (e) => {
-        console.log(e);
-    }
     return (
         <header className='header'>
-            {/* <p>{props.title}</p> */}
-            
-            <Button text='About' onClick = {onClick}/>
-            {/*<Button text='Experience'/>*/}
-            <Button text='Work'/>
-            <Button text='Contact'/>
-            <Button text='Resume'/>
-            <Button text='Linkedin' image='true'/>
-            <Button text='Github' image='true'/>
-            {/* {<div>Iconos diseñados por <a href="https://www.flaticon.es/autores/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>} 
-            </div>*/}
+            <Button id={1} text={showText ? 'About' : 'Portfolio'} onAdd={onAdd}/>
+            <Button id={2} text='Contact' link={'https://mail.google.com/mail/?view=cm&fs=1&to=pepe199204@com'}/>
+            <Button id={3} text='Resume' link={'/cv/cv.pdf'}/>
+            <Button id={4} text='Linkedin' image='true' link={'https://www.linkedin.com/in/felipe-mendoza-pel%C3%A1ez-3285252b/'}/>
+            <Button id={5} text='Github' image='true' link={'https://github.com/pepe199204'}/>
 
         </header>
     )
-}
-Header.defaultProps = {
-
-}
-Header.propTypes = {
-    title : PropTypes.string.isRequired
 }
 export default Header
 

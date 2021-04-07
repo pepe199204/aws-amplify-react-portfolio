@@ -1,20 +1,19 @@
 import PropTypes from 'prop-types'
 
-const Button = ({color, text, onClick, image}) => {
+const Button = ({ color, text, image, onAdd, link}) => {
 
 
     if(image === 'true'){
         return (
-        
-            <button onClick = {onClick} style={{backgroundColor:color}} className='btn'>
-                {image === 'true' && <img className='socialNetwork' alt="" src={`/images/${text}.png`}
+            <button id ={text} className='btn'>
+                <a rel="noreferrer" href={link} target="_blank">{image === 'true' && <img className='socialNetwork' alt="" src={`/images/${text}.png`}
                 />
-                }
+                }</a>
                 </button>
             )
     }else{
         return (
-        <button onClick = {onClick} style={{backgroundColor:color}} className='btn'>{text}</button>
+            <button id ={text} onClick={onAdd}><a rel="noreferrer" href={link} className='btn' target="_blank">{text}</a></button>
         )
     }
 
@@ -22,7 +21,6 @@ const Button = ({color, text, onClick, image}) => {
 
 Button.propTypes = {
     text: PropTypes.string,
-    color: PropTypes.string,
-    onClick: PropTypes.func
+    color: PropTypes.string
 }
 export default Button

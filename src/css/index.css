@@ -400,6 +400,7 @@ th {
 
 html {
   font-size: 62.5%;
+  font-weight: lighter;
 }
 
 body {
@@ -418,26 +419,29 @@ body {
   width: 100%;
   height: auto;
   position: fixed;
+  padding: 3px;
   top: 0;
   left: 0;
   background-color: #3d3d3d;
+  z-index: 1;
 }
 
-.section {
+.section, .sectionAnimation {
   display: block;
   color: #ffffff;
   margin: 0 auto;
   width: 90%;
+  transition: 0.2s;
 }
-.section h2 {
+.section h2, .sectionAnimation h2 {
   color: #77c38e;
   font-size: 40px;
 }
-.section h3 {
+.section h3, .sectionAnimation h3 {
   color: #77c38e;
   font-size: 20px;
 }
-.section p {
+.section p, .sectionAnimation p {
   font-size: 20px;
 }
 
@@ -455,23 +459,27 @@ ul {
   flex-flow: wrap;
   align-content: space-around;
   justify-content: left;
-  padding: 20px;
   flex-grow: 1;
   flex-basis: 100%;
 }
 
 .itemFlex {
-  padding: 20px;
-  width: 40%;
+  padding: 10px;
+  width: 30%;
 }
 
 .itemFlexWork {
   width: 33%;
   text-align: center;
+  transition: 0.2s;
 }
 .itemFlexWork:hover {
   transform: scale(1.1);
   transition: 0.2s;
+}
+.itemFlexWork .boldSkills {
+  font-weight: bold;
+  color: #77c38e;
 }
 
 .subItemFlex {
@@ -498,6 +506,7 @@ ul {
 
 .experienceE {
   color: #838282;
+  font-weight: lighter;
 }
 
 ul li::before {
@@ -518,7 +527,7 @@ hr {
 .container {
   width: 80%;
   height: auto;
-  margin: 20px auto;
+  margin: 80px auto;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -537,20 +546,29 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
   display: block;
   color: #ffffff;
-  border: none;
   padding: 10px 10px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   margin-right: 5px;
-  background-color: inherit;
   transition: 0.2s;
 }
 .btn:hover {
   transform: scale(1.1);
   transition: 0.2s;
   color: #77c38e;
-  background-color: #1e1e1e;
+}
+
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+
+input, button, submit {
+  border: none;
+  background-color: inherit;
 }
 
 button:focus {
@@ -571,6 +589,46 @@ footer {
 
 .heart {
   color: #77c38e;
+}
+
+/* This fires as soon as the element enters the DOM*/
+.sectionAnimation-enter {
+  /*We give the list the initial dimension of the list button*/
+  opacity: 0;
+}
+.sectionAnimation-enter button {
+  transform: scale(0);
+}
+.sectionAnimation-enter div {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* This is where we can add the transition*/
+.sectionAnimation-enter-active {
+  opacity: 0;
+  transition: opacity 400ms, transform 300ms;
+}
+.sectionAnimation-enter-active button {
+  transform: scale(0);
+}
+.sectionAnimation-enter-active div {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* This fires as soon as the this.state.showList is false */
+.sectionAnimation-exit {
+  opacity: 0;
+  transform: scale(2);
+  transition: opacity 400ms, transform 300ms;
+}
+
+/* fires as element leaves the DOM*/
+.sectionAnimation-exit-active {
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 400ms, transform 300ms;
 }
 
 /*# sourceMappingURL=index.css.map */

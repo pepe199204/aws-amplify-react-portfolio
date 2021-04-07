@@ -1,6 +1,88 @@
-const Section = ({ section }) => {
 
-    if(section.title === 'About me'){
+const section = {
+    
+        id:1,
+        title: 'About me',
+        text1: 'Hi, mi name is Felipe and i love create solutions with code for resolve problems. My firsts lines of code was during my Associate Degree of Multimedia Development, and since that time i decided become in a Multimedial Developer with an emphasis on software development.',
+
+        text2: 'The first language that i learned was ActionScript 3.0, with this language i created multiples interfaces and games, but with the time i changed my focus and migrated to Javascript. In recent years I have applied my knowledge to the development of E-learning courses and games.',
+
+        text3: 'Being self-taught has allowed me to learn new technologies and apply them to improve my skills, creating alternatives for solving in the most optimal way the challenges that arise everyday in my work as a developer. Actually i am learning with more intensity React for acquire betters technical skills and create better integrations.',
+
+        technologies: {
+          title : 'This are a few technologies and tools that i have been working',
+          techs: {
+            tech1: 'JavaScript',
+            tech2: 'CreateJs',
+            tech3: 'HTML',
+            tech4: 'CSS',
+            tech5: 'React',
+            tech6: 'Sass',
+            tech7: 'AWS',
+            tech8: 'Git',
+            tech9: 'Adobe After Effects',
+            tech10: 'Adobe Animate',
+            tech11: 'Adobe Photoshop',
+            tech12: 'Adobe Illustrator'
+         }
+        },
+        experiences: {
+          title : 'Experience',
+          experience1: {
+            title: 'Multimedial Developer',
+            enterprise: 'Cesde Educational Institution',
+            time: 'jun 2011 - jun 2013 '
+          },
+          experience2: {
+            title: 'Interactivity I Teacher',
+            enterprise: 'Cesde Educational Institution',
+            time: 'feb 2013 - dic 2015'
+          },
+          experience3: {
+            title: 'Virtual didactic analyst',
+            enterprise: 'FORMACTIVA LTDA',
+            time: 'jun 2013 - oct 2015'
+          },
+          experience4: {
+            title: 'Multimedial Developer',
+            enterprise: 'euno',
+            time: 'nov 2015 - oct 2017'
+          },
+          experience5: {
+            title: 'IT Coordinator',
+            enterprise: 'euno',
+            time: 'oct 2017 - nov 2018'
+          },
+          experience6: {
+            title: 'Freelance',
+            enterprise: 'Freelancer Multimedia Developer',
+            time: 'dec 2018 - Present'
+          },
+          experience7: {
+            title: 'Software Developer',
+            enterprise: 'euno',
+            time: 'dec 2020 - Present'
+          },
+        },
+        languages: {
+          title : 'Laguages',
+          language1: {
+            title: 'Spanish',
+            proficiency: 'Native or bilingual proficiency',
+            code: 'es-ES'
+          },
+          language2: {
+            title: 'Engish',
+            proficiency: 'Limited working proficiency',
+            code: 'en-US'
+          }
+        }
+    
+}
+
+const About = () => {
+
+
         return (
             <div className='section'>
                <h2>{section.title}</h2>
@@ -103,36 +185,8 @@ const Section = ({ section }) => {
 
             </div>
         )
-    }else if(section.title === 'Portfolio'){
-        return (
-            <div className='section'>
-                <hr/>
-               <h2>{section.title}</h2>
-               <p>{section.text}</p>
-
-               <div className='flexContainer'>
-
-                 <div className='itemFlexWork'>
-                    <img className='img' alt="" src={`/images/${section.works.work1.image}`}/>
-                    <div>{section.works.work1.title}<br/></div>
-                </div>
-
-                 <div className='itemFlexWork'>
-                    <img className='img' alt="" src={`/images/${section.works.work1.image}`}/>
-                    <div>{section.works.work2.title}<br/></div>
-                </div>
-
-                 <div className='itemFlexWork'>
-                    <img className='img' alt="" src={`/images/${section.works.work1.image}`}/>
-                    <div>{section.works.work3.title}<br/></div>
-                </div>
-
-               </div>
-            </div>
-        )
-    }
 
 
 }
 
-export default Section
+export default About

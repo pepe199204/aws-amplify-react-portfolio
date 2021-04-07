@@ -1,6 +1,8 @@
 import Section from './Section'
-const Sections = ({sections}) => {
 
+const Sections = ({showSection,sections}) => {
+
+    console.log(showSection);
     return (
         <>
         {sections.map((section) => (

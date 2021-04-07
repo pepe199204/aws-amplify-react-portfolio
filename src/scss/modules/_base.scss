@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  font-weight: lighter;
 }
 
 body {
@@ -17,14 +18,15 @@ body {
   width: 100%;
   height:auto;
   position: fixed;
+  padding: 3px;
   top: 0;
   left: 0;
   background-color: $gray;
+  z-index: 1;
  }
 .section {
   display:block;
   color: $white;
-  //border: 1px dotted red;
   margin: 0 auto;
   width: 90%;
   h2{
@@ -38,6 +40,8 @@ body {
   p {
     font-size: 20px;
   }
+  transition: 0.2s;
+  
  }
 ul {
    list-style: none;
@@ -52,22 +56,25 @@ ul {
   flex-flow: wrap;
   align-content:space-around;
   justify-content:left;
-  padding: 20px;
   flex-grow: 1;
   flex-basis: 100%;
  }
  .itemFlex {
-   padding: 20px;
-   width: 40%;
+   padding: 10px;
+   width: 30%;
  }
  .itemFlexWork {
    width: 33%;
    text-align: center;
+   transition: 0.2s;
    &:hover{
     transform: scale(1.1);
     transition: 0.2s;
   }
-   
+ .boldSkills{
+   font-weight: bold;
+   color: $green;
+ }  
  }
  .subItemFlex {
   padding: 0 15px;
@@ -90,6 +97,7 @@ ul {
  }
 .experienceE {
   color: $softgray;
+  font-weight: lighter;
 }
 ul li::before {
   content: "\2022";
@@ -108,7 +116,7 @@ hr {
 .container {
   width: 80%;
   height: auto;
-  margin: 20px auto;
+  margin: 80px auto;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -129,25 +137,30 @@ h1,h2,h3,h4,h5,h6 {
 .btn {
   display:block;
   color: $white;
-  border: none;
   padding: 10px 10px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   margin-right: 5px;
-  background-color: inherit;
   transition: 0.2s;
   &:hover {
     // animation: 1s ease-in-out both fade-in;
     transform: scale(1.1);
     transition: 0.2s;
     color: $green;
-    background-color: $darkgray;
     
   }
   //border: 1px dashed $green;
   
 }
+a{
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+input, button, submit { 
+  border:none; 
+  background-color: inherit;
+} 
 button:focus {
   outline:0;
 }
@@ -163,12 +176,53 @@ footer {
    text-align: center;
    font-size: large;
 }
-
 .heart{
   color: $green;
 }
-// @for $item from 1 through length($color-headlines) {
-//   h#{$item} {
-//     color: nth($color-headlines, $item);
-//   }
-// }
+
+
+
+
+.sectionAnimation {
+  @extend .section;
+}
+
+
+/* This fires as soon as the element enters the DOM*/
+.sectionAnimation-enter {
+  /*We give the list the initial dimension of the list button*/
+  opacity: 0;
+    button{
+      transform: scale(0);
+    }
+    div{
+      opacity: 0;
+      transform: scale(0);
+    }
+
+  }
+  /* This is where we can add the transition*/
+  .sectionAnimation-enter-active {
+    opacity: 0;
+    button{
+      transform: scale(0);
+    }
+    div{
+      opacity: 0;
+      transform: scale(0);
+    }
+    transition: opacity 400ms, transform 300ms;
+    
+  }
+  /* This fires as soon as the this.state.showList is false */
+  .sectionAnimation-exit {
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 400ms, transform 300ms;
+  }
+  /* fires as element leaves the DOM*/
+  .sectionAnimation-exit-active {
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 400ms, transform 300ms;
+  }
