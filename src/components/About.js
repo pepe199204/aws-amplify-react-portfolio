@@ -3,9 +3,9 @@ const section = {
     
         id:1,
         title: 'About me',
-        text1: 'Hi, mi name is Felipe and i love create solutions with code for resolve problems. My firsts lines of code was during my Associate Degree of Multimedia Development, and since that time i decided become in a Multimedial Developer with an emphasis on software development.',
+        text1: 'Hi, mi name is Felipe and i love create solutions with code for resolve problems. My first lines of code were during my Associate Degree of Multimedia Development, and since that time i decided become in a Multimedial Developer with an emphasis on software development.',
 
-        text2: 'The first language that i learned was ActionScript 3.0, with this language i created multiples interfaces and games, but with the time i changed my focus and migrated to Javascript. In recent years I have applied my knowledge to the development of E-learning courses and games.',
+        text2: 'The first language i did learn was ActionScript 3.0, with this language i created multiples interfaces and games, but with the time i did change my focus and migrate to Javascript. I have a huge experience applied my knowledge in the development of in E-learning courses and games.',
 
         text3: 'Being self-taught has allowed me to learn new technologies and apply them to improve my skills, creating alternatives for solving in the most optimal way the challenges that arise everyday in my work as a developer. Actually i am learning with more intensity React for acquire betters technical skills and create better integrations.',
 

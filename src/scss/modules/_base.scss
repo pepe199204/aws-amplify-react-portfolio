@@ -10,6 +10,7 @@ body {
   font-family: $font-main;
   color: $color-main;
   background-color: $color-backgrounds;
+  min-width: $extraSmall;
 }
 .header {
   display: flex;
@@ -23,6 +24,8 @@ body {
   left: 0;
   background-color: $gray;
   z-index: 1;
+
+
  }
 .section {
   display:block;
@@ -64,17 +67,28 @@ ul {
    width: 30%;
  }
  .itemFlexWork {
-   width: 33%;
+   width: 50%;
    text-align: center;
    transition: 0.2s;
-   &:hover{
-    transform: scale(1.1);
-    transition: 0.2s;
+   font-size: 25px;
+   padding: 10px;
+    &:hover{
+      transform: scale(1.05);
+      transition: 0.2s;
+
+    }
+  .boldSkills{
+    font-weight: bold;
+    color: $green;
+  }  
+
+  @media screen and (max-width: $medium + 500px ){
+
+    width: auto;
+    font-size: 30px;
   }
- .boldSkills{
-   font-weight: bold;
-   color: $green;
- }  
+
+
  }
  .subItemFlex {
   padding: 0 15px;
@@ -126,6 +140,7 @@ hr {
 .img {
   width: 70%;
   border: 3px solid $green;
+
 }
 $color-headlines: $blue, $purple, $green,
   $red, $orange, $yellow;
@@ -140,9 +155,28 @@ h1,h2,h3,h4,h5,h6 {
   padding: 10px 10px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 26px;
   margin-right: 5px;
   transition: 0.2s;
+  text-align: center;
+
+  @media screen and (max-width: $medium ){
+
+    font-size: 24px;
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+  @media screen and (max-width: $small ){
+
+    font-size: 18px;
+  }
+  @media screen and (max-width: $extraSmall ){
+
+    font-size: 16px;
+    padding-right: 4px;
+  }
+
+
   &:hover {
     // animation: 1s ease-in-out both fade-in;
     transform: scale(1.1);
@@ -166,8 +200,19 @@ button:focus {
 }
 .socialNetwork {
   background-color: inherit;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+
+  @media screen and (max-width: $medium ){
+
+    width: 25px;
+    height: 25px;
+  }
+  @media screen and (max-width: $small ){
+
+    width: 20px;
+    height: 20px;
+  }
 
 
 }

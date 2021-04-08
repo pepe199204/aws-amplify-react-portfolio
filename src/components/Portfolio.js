@@ -1,7 +1,7 @@
 const section = {
         id:2,
         title: 'Portfolio',
-        text: 'This is a sample of my expertise',
+        text: 'These are samples of my skills',
         works: {
           work1: {
             title: 'React App work1',
@@ -13,6 +13,10 @@ const section = {
           },
           work3: {
             title: 'React App work3',
+            image: 'app1.jpg'
+          },
+          work4: {
+            title: 'React App work4',
             image: 'app1.jpg'
           }
         }
@@ -41,6 +45,11 @@ const Portfolio = () => {
              <button className='itemFlexWork'>
                 <img className='img' alt="" src={`/images/${section.works.work1.image}`}/>
                 <div>{section.works.work3.title}<br/></div>
+            </button>
+
+             <button className='itemFlexWork'>
+                <img className='img' alt="" src={`/images/${section.works.work1.image}`}/>
+                <div>{section.works.work4.title}<br/></div>
             </button>
 
            </div>
