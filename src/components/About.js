@@ -10,7 +10,7 @@ const section = {
         text3: 'Being self-taught has allowed me to learn new technologies and apply them to improve my skills, creating alternatives for solving in the most optimal way the challenges that arise everyday in my work as a developer. Actually i am learning with more intensity React for acquire betters technical skills and create better integrations.',
 
         technologies: {
-          title : 'This are a few technologies and tools that i have been working',
+          title : 'These are a few technologies and tools that i have been working',
           techs: {
             tech1: 'JavaScript',
             tech2: 'CreateJs',
