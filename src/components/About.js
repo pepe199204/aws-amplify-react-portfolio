@@ -3,11 +3,11 @@ const section = {
     
         id:1,
         title: 'About me',
-        text1: 'Hi, mi name is Felipe and i love create solutions with code for resolve problems. My first lines of code were during my Associate Degree of Multimedia Development, and since that time i decided become in a Multimedial Developer with an emphasis on software development.',
+        text1: 'Hi, my name is Felipe and I love to code solutions for problem solving. I made my first lines of code during my Associate Degree of Multimedia Development back in 2010, and since that time i decided to become a Multimedia Developer with an emphasis on software development.',
 
-        text2: 'The first language i did learn was ActionScript 3.0, with this language i created multiples interfaces and games, but with the time i did change my focus and migrate to Javascript. I have a huge experience applied my knowledge in the development of in E-learning courses and games.',
+        text2: 'My first programming language was ActionScript 3.0, wich with i created multiple interfaces and games, and as time when by, i put my focus on JavaScript, putting my experience and applying my knowledge in the development of E-learning courses and games.',
 
-        text3: 'Being self-taught has allowed me to learn new technologies and apply them to improve my skills, creating alternatives for solving in the most optimal way the challenges that arise everyday in my work as a developer. Actually i am learning with more intensity React for acquire betters technical skills and create better integrations.',
+        text3: 'Being self-taught has allowed me to learn new technologies and apply them to improve my skills, creating alternatives to solve the everyday challenges in the most optimal and effective way. I am currently learning React to acquire better technical skills and make the best possible integrations to its componentization capabilities. ',
 
         technologies: {
           title : 'These are a few technologies and tools that i have been working',
