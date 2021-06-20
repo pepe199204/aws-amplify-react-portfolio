@@ -5,7 +5,7 @@ const section = {
         title: 'About me',
         text1: 'Hi, my name is Felipe and I love to code solutions for problem solving. I made my first lines of code during my Associate Degree of Multimedia Development back in 2010, and since that time i decided to become a Multimedia Developer with an emphasis on software development.',
 
-        text2: 'My first programming language was ActionScript 3.0, wich with i created multiple interfaces and games, and as time when by, i put my focus on JavaScript, putting my experience and applying my knowledge in the development of E-learning courses and games.',
+        text2: 'My first programming language was ActionScript 3.0, which with i created multiple interfaces and games, and as time when by, i put my focus on JavaScript, putting my experience and applying my knowledge in the development of E-learning courses and games.',
 
         text3: 'Being self-taught has allowed me to learn new technologies and apply them to improve my skills, creating alternatives to solve the everyday challenges in the most optimal and effective way. I am currently learning React to acquire better technical skills and make the best possible integrations to its componentization capabilities. ',
 
