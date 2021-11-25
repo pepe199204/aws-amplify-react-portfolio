@@ -16,15 +16,16 @@ const section = {
             tech2: 'CreateJs',
             tech3: 'HTML',
             tech4: 'CSS',
-            tech5: 'React',
-            tech6: 'Sass',
-            tech7: 'AWS',
-            tech8: 'Git',
-            tech9: 'Adobe After Effects',
-            tech10: 'Adobe Animate',
-            tech11: 'Adobe Photoshop',
-            tech12: 'Adobe Illustrator'
-         }
+            tech5: 'Handlebars',
+            tech6: 'React',
+            tech7: 'Sass',
+            tech8: 'AWS',
+            tech9: 'Git',
+            tech10: 'Adobe After Effects',
+            tech11: 'Adobe Animate',
+            tech12: 'Adobe Photoshop',
+            tech13: 'Adobe Illustrator'
+        }
         },
         experiences: {
           title : 'Experience',
@@ -56,7 +57,7 @@ const section = {
           experience6: {
             title: 'Freelance',
             enterprise: 'Freelancer Multimedia Developer',
-            time: 'dec 2018 - Present'
+            time: 'dec 2018 -2020'
           },
           experience7: {
             title: 'Software Developer',
@@ -76,6 +77,24 @@ const section = {
             proficiency: 'Limited working proficiency',
             code: 'en-US'
           }
+        },
+        education: {
+          title : 'Education',
+          education1: {
+            title: 'Computer Engineering',
+            university: 'Universidad de Antiquia',
+            year: 'present'
+          },
+          education2: {
+            title: 'Certified Tech Developer',
+            university: 'Digital House',
+            year: 'Present'
+          },
+          education3: {
+            title: 'Associate Degree of Multimedia Development',
+            university: 'Cesde Educational Institution',
+            year: '2011'
+          },
         }
     
 }
@@ -85,102 +104,133 @@ const About = () => {
 
         return (
             <div className='section'>
-               <h2>{section.title}</h2>
-               <p>{section.text1}</p>
-               <p>{section.text2}</p>
-               <p>{section.text3}</p>
+                <h2>{section.title}</h2>
+                <p>{section.text1}</p>
+                <p>{section.text2}</p>
+                <p>{section.text3}</p>
 
-               <hr/>
+                <hr/>
 
-               <h3>{section.technologies.title}</h3>
-               <div className='flexContainer'>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech1}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech2}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech3}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech4}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech5}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech6}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech7}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech8}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech9}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech10}</div>
-                   <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech11}</div>
-               </div>
-               <br/>
+                <h3>{section.technologies.title}</h3>
+                <div className='flexContainer'>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech1}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech2}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech3}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech4}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech5}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech6}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech7}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech8}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech9}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech10}</div>
+                    <div className='itemFlex'><b className='arrowList'>&#9658;</b>{section.technologies.techs.tech11}</div>
+                </div>
+                <br/>
 
-               <hr/>
+                <hr/>
 
-               <h3>{section.experiences.title}</h3>
-               <div className='flexContainer'>
-                   
-                   
-                   <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
-                   <b>{section.experiences.experience7.title}</b><br/>
-                    <div className='subItemFlex'>{section.experiences.experience7.enterprise}<br/>
-                    <b className='experienceE'>{section.experiences.experience7.time}</b></div>
-                   </div>
-
-
-                   <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
-                   <b>{section.experiences.experience6.title}</b><br/>
-                    <div className='subItemFlex'>{section.experiences.experience6.enterprise}<br/>
-                    <b className='experienceE'>{section.experiences.experience6.time}</b></div>
-                   </div>
-
-                   <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
-                   <b>{section.experiences.experience5.title}</b><br/>
-                    <div className='subItemFlex'>{section.experiences.experience5.enterprise}<br/>
-                    <b className='experienceE'>{section.experiences.experience5.time}</b></div>
-                   </div>
-
-                   <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
-                   <b>{section.experiences.experience4.title}</b><br/>
-                    <div className='subItemFlex'>{section.experiences.experience4.enterprise}<br/>
-                    <b className='experienceE'>{section.experiences.experience4.time}</b></div>
-                   </div>
-
-                   <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
-                   <b>{section.experiences.experience3.title}</b><br/>
-                    <div className='subItemFlex'>{section.experiences.experience3.enterprise}<br/>
-                    <b className='experienceE'>{section.experiences.experience3.time}</b></div>
-                   </div>
-
-                   <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
-                   <b>{section.experiences.experience2.title}</b><br/>
-                    <div className='subItemFlex'>{section.experiences.experience2.enterprise}<br/>
-                    <b className='experienceE'>{section.experiences.experience2.time}</b></div>
-                   </div>
-
-                   <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
-                   <b>{section.experiences.experience1.title}</b><br/>
-                    <div className='subItemFlex'>{section.experiences.experience1.enterprise}<br/>
-                    <b className='experienceE'>{section.experiences.experience1.time}</b></div>
-                   </div>
-                   
-                   
-               </div>
-                
-               <hr/>
+                <h3>{section.experiences.title}</h3>
+                <div className='flexContainer'>
+                    
+                    
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.experiences.experience7.title}</b><br/>
+                      <div className='subItemFlex'>{section.experiences.experience7.enterprise}<br/>
+                      <b className='experienceE'>{section.experiences.experience7.time}</b></div>
+                    </div>
 
 
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.experiences.experience6.title}</b><br/>
+                      <div className='subItemFlex'>{section.experiences.experience6.enterprise}<br/>
+                      <b className='experienceE'>{section.experiences.experience6.time}</b></div>
+                    </div>
 
-               <h3>{section.languages.title}</h3>
-               <div className='flexContainer'>
-                   
-                   
-                   <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
-                   <b>{section.languages.language1.title}</b><br/>
-                    <div className='subItemFlex'>{section.languages.language1.proficiency}<br/>
-                    <b className='experienceE'>{section.languages.language1.code}</b></div>
-                   </div>
-                   
-                   <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
-                   <b>{section.languages.language2.title}</b><br/>
-                    <div className='subItemFlex'>{section.languages.language2.proficiency}<br/>
-                    <b className='experienceE'>{section.languages.language2.code}</b></div>
-                   </div>
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.experiences.experience5.title}</b><br/>
+                      <div className='subItemFlex'>{section.experiences.experience5.enterprise}<br/>
+                      <b className='experienceE'>{section.experiences.experience5.time}</b></div>
+                    </div>
+
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.experiences.experience4.title}</b><br/>
+                      <div className='subItemFlex'>{section.experiences.experience4.enterprise}<br/>
+                      <b className='experienceE'>{section.experiences.experience4.time}</b></div>
+                    </div>
+
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.experiences.experience3.title}</b><br/>
+                      <div className='subItemFlex'>{section.experiences.experience3.enterprise}<br/>
+                      <b className='experienceE'>{section.experiences.experience3.time}</b></div>
+                    </div>
+
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.experiences.experience2.title}</b><br/>
+                      <div className='subItemFlex'>{section.experiences.experience2.enterprise}<br/>
+                      <b className='experienceE'>{section.experiences.experience2.time}</b></div>
+                    </div>
+
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.experiences.experience1.title}</b><br/>
+                      <div className='subItemFlex'>{section.experiences.experience1.enterprise}<br/>
+                      <b className='experienceE'>{section.experiences.experience1.time}</b></div>
+                    </div>
+                    
+                    
+                </div>
+                  
+                <hr/>
+
+
+                <h3>{section.education.title}</h3>
+
+                <div className='flexContainer'>
+                    
+                    
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.education.education1.title}</b><br/>
+                      <div className='subItemFlex'>{section.education.education1.university}<br/>
+                      <b className='experienceE'>{section.education.education1.year}</b></div>
+                    </div>
+                    
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.education.education2.title}</b><br/>
+                      <div className='subItemFlex'>{section.education.education2.university}<br/>
+                      <b className='experienceE'>{section.education.education2.year}</b></div>
+                    </div>
+
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.education.education3.title}</b><br/>
+                      <div className='subItemFlex'>{section.education.education3.university}<br/>
+                      <b className='experienceE'>{section.education.education3.year}</b></div>
+                    </div>
+
+
 
                 </div>
+
+                <hr/>
+
+                <h3>{section.languages.title}</h3>
+
+                <div className='flexContainer'>
+                    
+                    
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.languages.language1.title}</b><br/>
+                      <div className='subItemFlex'>{section.languages.language1.proficiency}<br/>
+                      <b className='experienceE'>{section.languages.language1.code}</b></div>
+                    </div>
+                    
+                    <div className='itemFlex'><b className='arrowListE'>&#9658;</b>
+                    <b>{section.languages.language2.title}</b><br/>
+                      <div className='subItemFlex'>{section.languages.language2.proficiency}<br/>
+                      <b className='experienceE'>{section.languages.language2.code}</b></div>
+                    </div>
+
+                  </div>
+
+                
 
 
             </div>
