@@ -9,11 +9,13 @@ const section = {
             link: 'https://pepe199204.github.io/handlebars-sass/src/',
             image: 'app1.jpg'
           }
-          //,
-          // work2: {
-          //   title: 'React App work2',
-          //   image: 'app1.jpg'
-          // },
+          ,
+          work2: {
+            title: 'React App consuming Json data dynamically',
+            description: 'In this project i used react.js for generate dynamically the template consuming a json file.',
+            link: 'https://github.com/pepe199204/load-news-dynamically',
+            image: 'app1.jpg'
+          }
           // work3: {
           //   title: 'React App work3',
           //   image: 'app1.jpg'
@@ -40,6 +42,12 @@ const Portfolio = () => {
               <img className='img' alt="" src={`/images/${section.works.work1.image}`}/>
               <h3>{section.works.work1.title}</h3>
               <p>{section.works.work1.description}</p>
+            </a>
+          
+            <a className='itemFlexWork' href={section.works.work2.link} target='_blank'>
+              <img className='img' alt="" src={`/images/${section.works.work2.image}`}/>
+              <h3>{section.works.work2.title}</h3>
+              <p>{section.works.work2.description}</p>
             </a>
             
           </div>
